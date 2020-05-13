@@ -1,9 +1,9 @@
 package linkedList;
 
-public class SingleLLMain {
+public class SinglyLLMain {
 public static void main(String[] args) {
 		
-		SingleLL list = new SingleLL();
+		SinglyLL list = new SinglyLL();
 		list.createSLL(5);
 		list.traverse();
 		

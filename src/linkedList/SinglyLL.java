@@ -1,6 +1,6 @@
 package linkedList;
 import node.SingleNode;
-public class SingleLL {
+public class SinglyLL {
 	private SingleNode head;
 	private SingleNode tail;
 	private int size;
