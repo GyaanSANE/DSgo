@@ -77,7 +77,7 @@ public class SinglyLL {
 			if(getSize() == 0) { // if there are no more nodes in this list
 				tail = null;
 			}
-		}else if(loc>=getSize()) {
+		}else if(loc>=getSize()-1) {
 			SingleNode temp=head;
 			for(int i=0;i<size-1;i++ ) {
 				temp = temp.getNext();
