@@ -1,7 +1,7 @@
 package linkedList;
 import node.DoubleNode;
 public class DoublyLL {
- DoubleNode head;//removed private to ease inheritance
+ DoubleNode head; //removed private to ease inheritance
  DoubleNode tail;
  int size;
 
