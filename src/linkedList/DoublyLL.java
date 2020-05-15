@@ -3,7 +3,11 @@ import node.DoubleNode;
 public class DoublyLL {
  DoubleNode head; //removed private to ease inheritance
  DoubleNode tail;
- int size;
+ public DoubleNode getTail() {//get tail to access top of stack value
+	return tail;
+}
+
+int size;
 
 public void setSize(int size) {
 	this.size = size;
