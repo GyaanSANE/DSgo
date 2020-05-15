@@ -1,9 +1,9 @@
 package linkedList;
 import node.DoubleNode;
 public class DoublyLL {
-private DoubleNode head;
-private DoubleNode tail;
-private int size;
+ DoubleNode head;//removed private to ease inheritance
+ DoubleNode tail;
+ int size;
 
 public void setSize(int size) {
 	this.size = size;
