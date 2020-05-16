@@ -4,10 +4,10 @@ public class CircularQueueByArray {
 private int size;
 private int start;
 private int end;
-	int[] q;
+	int[] arr;
 	
 public CircularQueueByArray(int size) {
-		q = new int[size+1];
+		arr = new int[size+1];
 		this.size = size+1;
 		start = end = 0;	
 	}
@@ -33,10 +33,10 @@ public void enque(int val) {
 		System.out.println("Queue is Full!!");
 		return;
 	}else if(end == size-1 && start>0) {
-		q[end] = val;
+		arr[end] = val;
 		end=0;
 	}else {
-		q[end] = val;
+		arr[end] = val;
 		end++;
 	}
 }
@@ -47,11 +47,11 @@ public int deque() {
 		System.out.println("Queue is empty!");
 		return Integer.MIN_VALUE;
 	}else if(start == size-1) {
-		ret = q[start];
+		ret = arr[start];
 		start = 0;
 		return ret;
 	}else {
-		ret = q[start];
+		ret = arr[start];
 		start++;
 		return ret;
 	}
@@ -63,21 +63,18 @@ public int peek() {
 
 		return Integer.MIN_VALUE;
 	}else {
-		return  q[start];
+		return  arr[start];
 	}	
 }
 
-public void deleteQueue() {
+public void emptyQueue() {
 	start = end =0;
 }
 
-
-
-
-
-
-
-
-
+public void deleteQueue() {
+	arr = null;
+	start = end = 0;
+}
+//can add suitable handling for exists() in case arr==null
 	
 }
