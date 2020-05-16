@@ -10,7 +10,7 @@ DoublyLL list;
 		top = -1;
 		
 	}
-	
+	//push
 	public void push(int val) {
 		if(exists()) {
 			if (top ==-1) {//first push
@@ -23,7 +23,7 @@ DoublyLL list;
 			System.out.println("Stack does not exist. Create it first.");
 		}	
 	}
-	
+	//pop
 	public void pop() {
 		if(!exists()) {
 			System.out.println("Stack does not exist.");
@@ -35,7 +35,7 @@ DoublyLL list;
 			top--;
 		}	
 	}
-	
+	//peek
 	public void peek() {
 		if(!exists()) {
 			System.out.println("Stack does not exist.");
@@ -46,7 +46,7 @@ DoublyLL list;
 		}	
 	}
 	
-	
+	//exists
 	public boolean exists() {
 		if (list == null) {
 			return false;
@@ -54,7 +54,7 @@ DoublyLL list;
 			return true;
 		}
 	}
-	
+	//isEmpty
 	public boolean isEmpty() {
 		if(top == -1) {
 			return true;
@@ -62,7 +62,7 @@ DoublyLL list;
 			return false;
 		}
 	}
-	
+	//delete
 	public void deleteStack() {
 		list.deleteLL();
 		list=null;
