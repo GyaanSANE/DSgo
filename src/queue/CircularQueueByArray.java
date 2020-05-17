@@ -7,8 +7,8 @@ private int end;
 	int[] arr;
 	
 public CircularQueueByArray(int size) {
-		arr = new int[size+1];
-		this.size = size+1;
+		arr = new int[size+1];   //scope : improve pointer function by setting start=end=-1 whenever dequeue empties queue, the only isEmpty case becomes s=e=-1, so s=e can also store a value 
+		this.size = size+1;      //for the above, enq pointer function will also change...... this will only change space complexity from n+1 to n.
 		start = end = 0;	
 	}
 
