@@ -22,7 +22,7 @@ static int valToBeDeleted;
 		}
 	}
 	
-	public void insert(BinaryNode root, int val) {
+	private void insert(BinaryNode root, int val) {
 		BinaryNode node = new BinaryNode();
 		node.setValue(val);
 		if(val<root.getValue()) {
@@ -53,7 +53,7 @@ static int valToBeDeleted;
 		}
 	}
 	
-	public boolean search(BinaryNode root, int val) {
+	private boolean search(BinaryNode root, int val) {
 		if (root.getValue()==val) {
 			System.out.println(val+" found");
 			return true;
@@ -86,7 +86,7 @@ static int valToBeDeleted;
 		}
 	}
 	
-	public void delete(BinaryNode root,int val) {//might print multiple deleted statements
+	private void delete(BinaryNode root,int val) {//might print multiple deleted statements
 		
 		if (val<root.getValue()) {
 			if(root.getLeft()!=null) {
@@ -151,10 +151,7 @@ static int valToBeDeleted;
 	}
 	
 	
-	
-	
-	
-	public BinaryNode nextMin(BinaryNode root) {
+	private BinaryNode nextMin(BinaryNode root) {
 		if (root.getLeft()==null) {
 			return root;
 		}else {
