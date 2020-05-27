@@ -1,3 +1,4 @@
+*_________________________<(-_-)>_________________________*
 
 These are just for fun implementaions of some data structures.
 Created simply to understand the major functions of each.

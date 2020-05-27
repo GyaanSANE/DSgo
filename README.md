@@ -1,2 +1,2 @@
 # DSgo
-Implementing Data Structures Manually
+Implementing Data Structures Manually.
