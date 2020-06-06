@@ -15,6 +15,9 @@ public class GraphNode {
 		this.name = name;
 		this.index = index;
 	}
+public GraphNode(String name) {
+this.name = name;
+}
 	public String getName() {
 		return name;
 	}
