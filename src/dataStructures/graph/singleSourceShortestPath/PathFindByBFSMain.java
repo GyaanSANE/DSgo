@@ -1,4 +1,4 @@
-package dataStructures.graph;
+package dataStructures.graph.singleSourceShortestPath;
 
 import java.util.ArrayList;
 
