@@ -54,21 +54,7 @@ public class BFSByAdjacencyMatrix {
 		return neighbours;
 	}
 	
-	/*//get unvisited neighbours
-	private ArrayList<GraphNode> getUnvisitedNeighbours(GraphNode node){
-		int nodeIndex = node.getIndex();
-		ArrayList<GraphNode> neighbours = new ArrayList<>();
-		for(int i =0;i<nodeList.size();i++) {
-			if(adjacecnyMatrix[nodeIndex][i] == 1) {
-				if(!nodeList.get(i).isVisited()) {
-					neighbours.add(nodeList.get(i));
-				}
-			}
-		}
-		return neighbours;
-	}*/
-	
-	//addUnweightedEdge
+	//addUndirectedEdge
 	public void addUndirectedEdge(int i,int j) { //nodes i,j
 		i--;
 		j--; //to get array index for matrix
