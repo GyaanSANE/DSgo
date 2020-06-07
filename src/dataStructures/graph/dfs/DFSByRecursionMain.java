@@ -16,7 +16,6 @@ public class DFSByRecursionMain {
 		//Constructor
 		DFSByIteration graph = new DFSByIteration(nodeList);
 		
-		//add edges following graph in graph.docx
 		graph.addUndirectedEdge(1,2);
 		graph.addUndirectedEdge(1,4);
 		graph.addUndirectedEdge(2,3);
