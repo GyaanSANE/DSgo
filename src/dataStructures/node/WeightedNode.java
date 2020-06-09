@@ -3,6 +3,7 @@ package dataStructures.node;
 import java.util.ArrayList;
 
 public class WeightedNode {
+//public class WeightedNode implements Comparable<WeightedNode>{ //use this to instead of comparator for PriorityQueue in dijkstra
 	String name;
 	ArrayList <WeightedEdge> edges = new ArrayList<>();
 	int cost = Integer.MAX_VALUE;
@@ -11,6 +12,11 @@ public class WeightedNode {
 	public WeightedNode(String name) {
 		this.name = name;
 	}
+	
+	/*@Override   //use this to instead of comparator for PriorityQueue in dijkstra
+	public int compareTo(WeightedNode o) {
+		return this.cost - o.cost;
+	}*/
 	
 	public String getName() {
 		return name;
