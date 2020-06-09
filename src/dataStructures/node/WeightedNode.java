@@ -6,7 +6,7 @@ public class WeightedNode {
 //public class WeightedNode implements Comparable<WeightedNode>{ //use this to instead of comparator for PriorityQueue in dijkstra
 	String name;
 	ArrayList <WeightedEdge> edges = new ArrayList<>();
-	int cost = Integer.MAX_VALUE;
+	int cost = Integer.MAX_VALUE/10; //reducing because Integer will cycle to -21474836... when we add anything to Int.max
 	boolean visited;
 	WeightedNode parent;
 	public WeightedNode(String name) {
