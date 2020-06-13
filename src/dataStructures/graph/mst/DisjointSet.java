@@ -54,7 +54,7 @@ public class DisjointSet {
 		
 	}
 	
-	public DisjointSet getSet(WeightedNode2 node) {
+	public static DisjointSet getSet(WeightedNode2 node) {
 		return node.getSet();
 	}
 	public static DisjointSet findSet(WeightedNode2 node) {
