@@ -3,6 +3,8 @@ package dataStructures.node;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import dataStructures.graph.mst.DisjointSet;
+
 public class WeightedNode2 {
 	String name;
 	ArrayList <WeightedNode2> neighbours = new ArrayList<>();
@@ -10,6 +12,13 @@ public class WeightedNode2 {
 	int cost = Integer.MAX_VALUE/10; //reducing because Integer will cycle to -21474836... when we add anything to Int.max
 	boolean visited;
 	WeightedNode2 parent;
+	DisjointSet set;
+	public DisjointSet getSet() {
+		return set;
+	}
+	public void setSet(DisjointSet set) {
+		this.set = set;
+	}
 	public WeightedNode2(String name) {
 		this.name = name;
 	}
@@ -48,6 +57,10 @@ public class WeightedNode2 {
 	}
 	public void setParent(WeightedNode2 parent) {
 		this.parent = parent;
+	}
+	@Override
+	public String toString() {
+		return name;
 	}
 
 }
